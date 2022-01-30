@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+
+.main__container {
+  width: 99vw;
+  background: #1d3557;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  padding: 5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin: 0%;
+}
+
+.left__section {
+  width: 30vw;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Merriweather;
+}
+
+.desc {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-family: Maven Pro;
+}
+
+.contact__info {
+  margin-top: 5rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.info a {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-family: Maven Pro;
+}
+
+.info p {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-family: Maven Pro;
+}
+
+.info img {
+  height: 25px;
+}
+
+.icon {
+  color: white;
+  height: 25px;
+}
+
+.form__div {
+  width: 25vw;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.input label {
+  font-size: 1.2rem;
+  font-family: Maven Pro;
+}
+
+.input input {
+  width: 18vw;
+  font-size: 1rem;
+  border: 2px solid #d7d6d6;
+  border-radius: 8px;
+  padding: 3px;
+  padding-left: 8px;
+}
+
+.subscription {
+  margin-top: 2rem;
+}
+
+.subs__title {
+  font-size: 1.2rem;
+  font-family: Maven Pro;
+}
+
+.plan {
+  color: #e63946;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Maven Pro;
+}
+
+.option {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.option label {
+  font-size: 1rem;
+  font-family: Maven Pro;
+  margin-left: 0.5rem;
+}
+
+.btn__div {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  margin: 2rem auto;
+  background: linear-gradient(180deg, #e63946 0%, #e63973 100%);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1230px) {
+  .main__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left__section {
+    width: 100%;
+  }
+
+  .form__div {
+    width: 500px;
+  }
+
+  .input label {
+    font-size: 1rem;
+  }
+
+  .input input {
+    width: 97%;
+  }
+
+  .option > label {
+    font-size: 1rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .subscription p,
+  .subscription label {
+    font-size: 18px;
+  }
+
+  .contact__info {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .form__div {
+    width: 380px;
+  }
+
+  .input input {
+    width: 97%;
+  }
+
+  .info p,
+  .info a {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .main__container {
+    padding: 1rem;
+  }
+
+  .option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
